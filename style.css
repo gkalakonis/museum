@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Didot", "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+.header {
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire space */
+    transition: opacity 0.3s ease-in-out; /* Smooth opacity transition */
+}
+
+.hover-image {
+    opacity: 0; /* Initially hide hover image */
+}
+
+.image-container:hover .hover-image {
+    opacity: 1; /* Fade in hover image on hover */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.overlay-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff9900;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-right: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.top-right-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.transparent-button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-family: "Didot", "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: 10px; /* Adjust spacing between buttons */
+}
+
+.transparent-button:hover {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 40px;
+    position: relative;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+    text-transform: uppercase;
+}
+
+.menu a:hover {
+    color: #ff9900;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Didot", "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+.header {
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the whole container */
+    transition: opacity 0.5s ease-in-out; /* Smooth opacity transition */
+}
+
+.hover-image {
+    opacity: 0; /* Initially hide hover image */
+}
+
+.image-container:hover .hover-image {
+    opacity: 1; /* Fade in hover image on hover */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.overlay-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.transparent-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.transparent-button:hover {
+    background-color: #ffffff;
+    color: #333333;
+}
+.social-icons {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.social-icon {
+    display: inline-block;
+    margin-right: 10px; /* Adjust spacing between icons */
+}
+
+.social-icon img {
+    width: 30px; /* Adjust icon size as needed */
+    height: auto;
+}
