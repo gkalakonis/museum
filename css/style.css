@@ -139,8 +139,8 @@ nav {
 
 /*Icons adjustments */
 .social-icons {
-    position: fixed;
-    top: 1.5em;
+    position: absolute;
+    top: 0.89em;
     left: 1em;
     z-index: 1; /* Ensure it's above other content */
 }
