@@ -3,11 +3,10 @@ body {
     padding: 0;
     font-family:"Oregon LDO DemiBold", "Didot", "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", sans-serif;
     font-family: "Oregon LDO DemiBold", sans-serif;
-    overflow: visible;
+    overflow: hidden;
+    overflow-y: auto;
     background: linear-gradient(to bottom, #f6f5f5, #bdbdbd); 
-
 }
-
 
 .header {
     position: relative;
@@ -60,7 +59,6 @@ body {
     color: white;
     border: 0.05em solid white;
     border-radius: 0.5em;
-    
     text-transform: uppercase;
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s;
@@ -79,7 +77,6 @@ nav {
     align-items: center;
     padding: 0.7em 0em;
     width: 100%;
-  
 }
 
 .menu {
