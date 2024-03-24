@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Museum Website</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_news.css">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    
 </head>
 <body>
     <div class="social-icons">
@@ -31,19 +36,60 @@
         <nav>
             <ul class="menu">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
+   
                 <li class="dropdown">
                     <a href="#">Exhibitions</a>
                     <div class="dropdown-content">
-                        <a href="#">Current Exhibitions</a>
+                        <a href="#">Permanent Exhibitions</a>
+                        <a href="#">Temporary Exhibitions</a>
                         <a href="#">Past Exhibitions</a>
                     </div>
                 </li>
-                <li><a href="#">Events</a></li>
+                <li class="dropdown">
+                    <a href="#">Events</a>
+                    <div class="dropdown-content">
+                        <a href="#">Live Events</a>
+                        <a href="#">Past Events</a>
+                        
+                    </div>
+                
+                </li>
                 <li><a href="#">Visit</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-    </div>
-</body>
-</html>
+        
+        <div class="latest-news-container">
+            <section class="latest-news">
+                <h2>THE LATEST NEWS FROM THE MUSEUM</h2>
+                
+            </section>
+            <section class="news-slider">
+               
+                <div class="news-item">
+                    <h3>News Title 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="news-item">
+                    <h3>News Title 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="news-item">
+                    <h3>News Title 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="news-item">
+                    <h3>News Title 4</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <!-- Add more news items as needed -->
+            </section>
+        </div>
+    
+        <!-- Slick Slider JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick Slider JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Your custom JavaScript -->
+    <script src="js/script.js"></script>
+    </body>
+    </html>

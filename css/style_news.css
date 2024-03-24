@@ -1,0 +1,105 @@
+/* style_news.css */
+
+/* Custom styles for slick slider arrows */
+.slick-prev,
+.slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 50%;
+    font-family: "Oregon LDO DemiBold", sans-serif,"Didot", "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", sans-serif; /* Use the existing font */
+}
+
+.slick-prev:hover,
+
+.slick-prev {
+    left: 10px;
+}
+
+.slick-next {
+    right: 10px;
+}
+
+/* Custom styles for slick slider */
+.slick-slider {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.slick-slide {
+    margin: 0 0;
+}
+
+.latest-news-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.latest-news {
+    width: 30%;
+    
+}
+
+.news-slider {
+    width: 70%;
+}
+
+.news-item {
+
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 0; /* Adjust margin between news cards */
+   
+}
+
+.news-item:last-child {
+    margin-right: 0; /* Remove margin for the last news card */
+}
+
+.news-item h3 {
+    margin-top: 0;
+    
+}
+
+.news-item p {
+    margin-bottom: 0;
+    
+}
+.news-item,.latest-news {
+  
+    border-radius: 8px;
+    
+    padding: 20px;
+    text-align: center;
+    font-family: "Oregon LDO DemiBold", sans-serif; /* Using the same font */
+    
+}
+.news-item {
+    
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+    box-shadow: 0 1em 0.5em rgba(0, 0, 0, 0.5);
+}
+.latest-news-container{
+    background-color: #fff;
+}
+.latest-news {
+    width: 100%; /* Adjust the width */
+    background-color: #fff; /* Set background color to white */
+    padding: 2em 1em; /* Adjust padding */
+    text-align: left; /* Align text to the left */
+    font-family: "Oregon LDO DemiBold", sans-serif; /* Change font family */
+    color: #afa403; /* Change text color to dark gray */
+}
+
+.latest-news-container {
+    display: flex;
+    align-items: flex-start;
+   
+}
