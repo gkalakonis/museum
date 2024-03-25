@@ -1,5 +1,4 @@
 .footertop {
-  
     bottom: 10em;
     width: 100%;
     background-color: antiquewhite;
@@ -8,17 +7,18 @@
     align-items: center;
 }
 
-.footertop h1 {
-    font-size: 2em;
+.title_footertop{
+    font-size: 1.6em;
     text-align: center;
+    padding-top: 1.8em;
     margin-bottom: 0.7em; /* Add space below the title */
 }
 
-.footertop .info {
+.footertop .footertop_info {
     display: flex;
     text-align: center;
 }
 
-.footertop .info .palace,.footertop .info .contact {
+.footertop .footertop_info .hours,.footertop .footertop_info .contact {
     flex: 1; /* Distribute available space evenly between children */
 }

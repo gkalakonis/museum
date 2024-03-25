@@ -3,9 +3,7 @@ body {
     padding: 0;
     font-family:"Oregon LDO DemiBold", "Didot", "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", sans-serif;
     font-family: "Oregon LDO DemiBold", sans-serif;
-   
-    overflow-y: scroll;
-    background: linear-gradient(to bottom, #f6f5f5, #bdbdbd); 
+    overflow-x: hidden;
 }
 
 .header {
@@ -64,63 +62,10 @@ body {
     transition: background-color 0.3s, color 0.3s;
     margin-left: 1em;
 }
+
 .transparent-button:hover {
     background-color: #ffffff;
     color: #333333;
-}
-
-nav {
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.7em 0em;
-    width: 100%;
-}
-
-.menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-.menu li {
-    margin-right: 2.5em;
-    position: relative;
-}
-.menu li:last-child {
-    margin-right: 1em;
-}
-
-.menu a {
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.3s;
-    text-transform: uppercase;
-}
-.menu a:hover {
-    color: #ff9900;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #333;
-    min-width: 200px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-.dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-transform: uppercase;
-}
-.dropdown:hover .dropdown-content {
-    display: block;
 }
 
 .buttons {
@@ -137,6 +82,29 @@ nav {
     text-decoration: none;
 }
 
+.informations {
+    margin: 5em 0;
+    display: flex;
+  }
+  
+.info {
+    flex: 1;
+    padding: 20px;
+  }
+  
+.image {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+  }
+  
+.image img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 50%; /* Adjust the left margin to 20% */
+  }
+  
+
 /*Icons adjustments */
 .social-icons {
     position: absolute;
@@ -151,16 +119,4 @@ nav {
 .social-icon img {
     width: 1em; /* Adjust icon size as needed */
     height: auto;
-}
-
-
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 100vh;
-}
-
-.latest-news-container {
-    flex-grow: 1; /* Allow it to grow to fill remaining space */
 }

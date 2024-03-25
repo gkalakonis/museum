@@ -1,8 +1,7 @@
 /* style_news.css */
 
 /* Custom styles for slick slider arrows */
-.slick-prev,
-.slick-next {
+.slick-prev,.slick-next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -10,19 +9,17 @@
     cursor: pointer;
     border: none;
     outline: none;
-    padding: 10px;
+    padding: 0.8em;
     border-radius: 50%;
     font-family: "Oregon LDO DemiBold", sans-serif,"Didot", "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", sans-serif; /* Use the existing font */
 }
 
-.slick-prev:hover,
-
-.slick-prev {
-    left: 10px;
+.slick-prev:hover,.slick-prev {
+    left: 0.8em;
 }
 
 .slick-next {
-    right: 10px;
+    right: 0.8em;
 }
 
 /* Custom styles for slick slider */
@@ -37,12 +34,13 @@
 
 .latest-news-container {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    background-color: #fff;
+    flex-grow: 1;
 }
 
 .latest-news {
     width: 30%;
-    
 }
 
 .news-slider {
@@ -50,11 +48,9 @@
 }
 
 .news-item {
-
-    padding: 20px;
-    border-radius: 10px;
+    padding: 1.6em;
+    border-radius: 0.8em;
     margin-right: 0; /* Adjust margin between news cards */
-   
 }
 
 .news-item:last-child {
@@ -63,43 +59,25 @@
 
 .news-item h3 {
     margin-top: 0;
-    
 }
 
 .news-item p {
     margin-bottom: 0;
-    
 }
+
 .news-item,.latest-news {
-  
-    border-radius: 8px;
-    
-    padding: 20px;
     text-align: center;
     font-family: "Oregon LDO DemiBold", sans-serif; /* Using the same font */
-    
 }
 .news-item {
-    
-    padding: 20px;
-    border-radius: 10px;
-    margin-right: 10px;
+    padding: 1.6em;
+    border-radius: 0.8em;
+    margin-right: 0.8em;
     box-shadow: 0 1em 0.5em rgba(0, 0, 0, 0.5);
-}
-.latest-news-container{
-    background-color: #fff;
 }
 .latest-news {
     width: 100%; /* Adjust the width */
     background-color: #fff; /* Set background color to white */
     padding: 2em 1em; /* Adjust padding */
-    text-align: left; /* Align text to the left */
-    font-family: "Oregon LDO DemiBold", sans-serif; /* Change font family */
     color: #afa403; /* Change text color to dark gray */
-}
-
-.latest-news-container {
-    display: flex;
-    align-items: flex-start;
-   
 }
