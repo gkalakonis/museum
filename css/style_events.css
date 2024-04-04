@@ -1,70 +1,134 @@
-/* Custom styles for slick slider arrows */
-.slick-prev,.slick-next {
+.carousel-variables {
+    --carousel-height: 47vh;
+    --carousel-radius: 0.5em;
+    --carousel-nav-btn-dim: 3em;
+    --carousel-page-nav-btn-dim: 0.5em;
+    --carousel-caption-padding: 2em;
+    --carousel-caption-color: #fff;
+    --carousel-caption-bg: linear-gradient(
+      to bottom,
+      transparent,
+      hsl(0 0 0 / 65%) 80%
+    );
+    --carousel-inner-spacing: 2em;
+    --carousel-prev-next-btn-bg: #fff;
+    --carousel-prev-next-btn-color: #333;
+    --carousel-pagination-margin: 1em;
+    --carousel-pagination-gap: 0.75em;
+    --carousel-pagination-btn-bg: #aaa;
+    --carousel-pagination-btn-active-bg: #333;
+}
+
+
+  /* Box-sizing reset */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+
+  
+  img
+  {
+    max-width: 100%;
+    
+  }
+  
+  .carousel-inner {
+    overflow: hidden;
+    position: relative;
+    min-height: var(--carousel-height);
+    border-radius: var(--carousel-radius);
+  }
+  
+  .carousel-title {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-size: 200%;
+  }
+  
+  .carousel-title + .carousel-description {
+    color: #888;
+    margin-top: 0;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: transform 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 9));
+  }
+  
+  .slide-content {
+    position: relative;
+    z-index: 5000;
+    height: 100%;
+  }
+  
+  .slide-caption {
+    
+    width: 100%;
+    position: absolute;
+    padding: var(--carousel-caption-padding);
+    left: 0;
+    bottom: 0;
+    color: var(--carousel-caption-color);
+    background-image: var(--carousel-caption-bg);
+  }
+  
+  .slide-caption a {
+    color: currentColor;
+  }
+  
+  .slide-caption h3,
+  .slide-caption p {
+    margin: 0;
+  }
+  .slide-caption h3 {
+    font-size: 200%;
+
+  }
+  .slide-caption p {
+    font-size: 150%;
+    opacity: 0.6;
+
+  }
+  
+  .slide img {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel-btn {
+    width: var(--carousel-nav-btn-dim);
+    height: var(--carousel-nav-btn-dim);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--carousel-prev-next-btn-color);
+    background-color: var(--carousel-prev-next-btn-bg);
+  }
+  
+  .carousel-btn--prev-next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 1;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    padding: 0.8em;
-    border-radius: 50%;
-}
-
-.slick-prev:hover,.slick-prev {
-    left: 0.8em;
-}
-
-.slick-next {
-    right: 0.8em;
-}
-
-/* Custom styles for slick slider */
-.slick-slider {
-    margin: 0 auto;
-    width: 80%;
-}
-
-.slick-slide {
-    margin: 0 0;
-}
-
-.latest-events-container {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-}
-
-.event-slider {
-    width: 70%;
-}
-
-.event-item {
-    padding: 1.6em;
-    border-radius: 0.8em;
-    margin-right: 0; /* Adjust margin between news cards */
-}
-
-.event-item h3 {
-    margin-top: 0;
-}
-
-.event-item p {
-    margin-bottom: 0;
-}
-
-.event-item,.latest-news {
-    text-align: center;
-}
-.event-item {
-    padding: 1.6em;
-    border-radius: 0.8em;
-    margin-right: 0.8em;
-    box-shadow: 0 1em 0.5em rgba(0, 0, 0, 0.5);
-}
-.latest-events {
-    width: 100%; /* Adjust the width */
-    text-align: center;
-    font-size: 1.5em;
-    color: #afa403; /* Change text color to dark gray */
-}
+    transition: transform 0.1s ease-in-out;
+  }
+  
+  .carousel-btn--prev-next:hover {
+    transform: translateY(-50%) scale(1.2);
+  }
+  
+  .carousel-btn--prev {
+    left: var(--carousel-inner-spacing);
+  }
+  
+  .carousel-btn--next {
+    right: var(--carousel-inner-spacing);
+  }
