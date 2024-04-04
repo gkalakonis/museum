@@ -1,7 +1,8 @@
 .footertop {
     bottom: 10em;
     width: 100%;
-    background-color: antiquewhite;
+    background-color: rgb(25, 0, 43);
+    
     height: 12em;
     display: flex; /* Add this line to make it a flex container */
     justify-content: space-evenly;
@@ -13,9 +14,5 @@
     text-align: center;
     justify-content: space-evenly; /* Change space-evenly to space-between */
 }
-
-.footertop .footertop_info .hours,
-.footertop .footertop_info .contact {
-    /* Remove justify-content: space-evenly; from here */
-    flex: 1;
-}
+.footertop .hours h2,.footertop .contact h2{color: #fff;}
+.footertop .hours p,.footertop .contact p{color: grey;}
