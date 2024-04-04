@@ -89,20 +89,20 @@ body {
   
 .info {
     flex: 1;
-    padding: 20px;
+    padding: 3%;
   }
   
 .image {
-    flex: 1;
-    padding: 20px;
-    display: flex;
+    padding: 5%;
   }
   
 .image img {
     max-width: 100%;
     height: auto;
-    margin-left: 50%; /* Adjust the left margin to 20% */
   }
+  
+  
+
   
 
 /*Icons adjustments */
