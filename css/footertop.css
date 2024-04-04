@@ -2,23 +2,20 @@
     bottom: 10em;
     width: 100%;
     background-color: antiquewhite;
-    height: 25em;
-    justify-content: space-between;
+    height: 12em;
+    display: flex; /* Add this line to make it a flex container */
+    justify-content: space-evenly;
     align-items: center;
 }
 
-.title_footertop{
-    font-size: 1.6em;
-    text-align: center;
-    padding-top: 1.8em;
-    margin-bottom: 0.7em; /* Add space below the title */
-}
-
-.footertop .footertop_info {
+.footertop {
     display: flex;
     text-align: center;
+    justify-content: space-evenly; /* Change space-evenly to space-between */
 }
 
-.footertop .footertop_info .hours,.footertop .footertop_info .contact {
-    flex: 1; /* Distribute available space evenly between children */
+.footertop .footertop_info .hours,
+.footertop .footertop_info .contact {
+    /* Remove justify-content: space-evenly; from here */
+    flex: 1;
 }
