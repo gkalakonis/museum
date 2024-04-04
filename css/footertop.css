@@ -1,12 +1,13 @@
 .footertop {
     bottom: 10em;
     width: 100%;
-    background-color: rgb(25, 0, 43);
+    background-color: #333;
     
     height: 12em;
     display: flex; /* Add this line to make it a flex container */
     justify-content: space-evenly;
     align-items: center;
+    border-bottom: red;
 }
 
 .footertop {
@@ -16,3 +17,13 @@
 }
 .footertop .hours h2,.footertop .contact h2{color: #fff;}
 .footertop .hours p,.footertop .contact p{color: grey;}
+hr{
+	width: 50%;
+	background-color: white;
+	height: 0.05em;
+	margin: 0 auto;
+	border: none;
+}
+.separator{
+	background-color :#333;
+}

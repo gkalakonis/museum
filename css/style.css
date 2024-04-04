@@ -1,9 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-    font-family:"Oregon LDO DemiBold", "Didot", "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", sans-serif;
-    font-family: "Oregon LDO DemiBold", sans-serif;
+    font-family:"Garamond", sans-serif;
     overflow-x: hidden;
+    background-color: white;
 }
 
 .header {
@@ -82,29 +82,6 @@ body {
     text-decoration: none;
 }
 
-.informations {
-    margin: 5em 0;
-    display: flex;
-  }
-  
-.info {
-    flex: 1;
-    padding: 3%;
-  }
-  
-.image {
-    padding: 5%;
-  }
-  
-.image img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  
-
-  
-
 /*Icons adjustments */
 .social-icons {
     position: absolute;
@@ -126,7 +103,26 @@ body {
     color:black;
 }
 
-.informations {
-    display: flex;
-    flex-direction: column;
+.france{
+    width:30%;
+    text-align: center;
+    filter: drop-shadow(30px 10px 3px rgb(99, 95, 95));
 } 
+
+table{
+    text-align: center;
+    margin-top:4em;
+    background-color: antiquewhite;
+    font-family: Garamond, cursive;
+    font-weight: lighter;
+}
+
+table p{
+    font-size: 1.5em;
+    text-align: left;
+    margin-left: 10%;
+}
+table th{
+    font-size: 1.5em;
+    text-align: center;
+}
