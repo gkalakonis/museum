@@ -125,3 +125,8 @@ body {
     height: auto;
     color:black;
 }
+
+.informations {
+    display: flex;
+    flex-direction: column;
+} 
