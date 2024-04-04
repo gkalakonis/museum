@@ -32,50 +32,50 @@
     margin: 0 0;
 }
 
-.latest-news-container {
+.latest-events-container {
     display: flex;
     align-items: center;
     background-color: #fff;
     flex-grow: 1;
 }
 
-.latest-news {
+.latest-events {
     width: 30%;
 }
 
-.news-slider {
+.event-slider {
     width: 70%;
 }
 
-.news-item {
+.event-item {
     padding: 1.6em;
     border-radius: 0.8em;
     margin-right: 0; /* Adjust margin between news cards */
 }
 
-.news-item:last-child {
+.event-item:last-child {
     margin-right: 0; /* Remove margin for the last news card */
 }
 
-.news-item h3 {
+.event-item h3 {
     margin-top: 0;
 }
 
-.news-item p {
+.event-item p {
     margin-bottom: 0;
 }
 
-.news-item,.latest-news {
+.event-item,.latest-news {
     text-align: center;
     font-family: "Oregon LDO DemiBold", sans-serif; /* Using the same font */
 }
-.news-item {
+.event-item {
     padding: 1.6em;
     border-radius: 0.8em;
     margin-right: 0.8em;
     box-shadow: 0 1em 0.5em rgba(0, 0, 0, 0.5);
 }
-.latest-news {
+.latest-events {
     width: 100%; /* Adjust the width */
     background-color: #fff; /* Set background color to white */
     padding: 2em 1em; /* Adjust padding */
