@@ -1,5 +1,6 @@
+
 .carousel-variables {
-    --carousel-height: 47vh;
+    --carousel-height: 20em;
     --carousel-radius: 0.5em;
     --carousel-nav-btn-dim: 3em;
     --carousel-page-nav-btn-dim: 0.5em;
@@ -28,7 +29,6 @@
   }
   
 
-  
   img
   {
     max-width: 100%;
