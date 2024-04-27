@@ -59,16 +59,16 @@ body {
     border-radius: 0.5em;
     text-transform: uppercase;
     text-decoration: none;
-    transition: background-color 0.3s, color 0.3s;
     margin-left: 1em;
 }
 
 .transparent-button:hover {
-    background-color: #ffffff;
-    color: #333333;
+    background-color: white;
+    color: black;
+    transition: background-color 1s, color 1s;
 }
 
-.buttons {
+.buttons{
     margin-top: 2em;
 }
 .button {
@@ -80,6 +80,10 @@ body {
     color:white;
     text-transform: uppercase;
     text-decoration: none;
+}
+.button:hover{
+    color:#333;
+    transition-duration: 0.75s;
 }
 
 /*Icons adjustments */
