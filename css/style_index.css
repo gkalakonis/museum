@@ -1,0 +1,120 @@
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 30em;
+    overflow: hidden;
+}
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the whole container */
+    transition: opacity 0.5s ease-in-out; /* Smooth opacity transition */
+}
+.hover-image {
+    opacity: 0; /* Initially hide hover image */
+}
+.image-container:hover .hover-image {
+    opacity: 1; /* Fade in hover image on hover */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+.overlay-text h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+.top-right-buttons {
+    position: absolute;
+    top: 1.5em;
+    right: 1em;
+}
+.transparent-button {
+    display: inline-block;
+    padding: 0.7em 0.8em;
+    background-color: transparent;
+    color: white;
+    border: 0.05em solid white;
+    border-radius: 0.5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+.transparent-button:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 1s, color 1s;
+}
+
+.buttons{
+    margin-top: 2em;
+}
+.button {
+    display: inline-block;
+    padding: 1em;
+    background-color: #7d1515;
+    border-radius: 1em;
+    margin-right: 0.4em;
+    color:white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.button:hover{
+    color:#333;
+    transition-duration: 0.75s;
+}
+
+/*Icons adjustments */
+.social-icons {
+    position: absolute;
+    top: 4%;
+    left: 1%;
+    z-index: 1; /* Ensure it's above other content */
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 1em; /* Adjust spacing between icons */
+}
+
+.fa-brands.fa-facebook,
+.fa-brands.fa-instagram,
+.fa-brands.fa-x-twitter {
+    width: 1em; /* Adjust icon size as needed */
+    height: auto;
+    color:black;
+}
+
+.france{
+    width:30%;
+    text-align: center;
+    filter: drop-shadow(30px 10px 3px rgb(99, 95, 95));
+} 
+
+table{
+    text-align: center;
+    margin:4em 0 4em 0;
+    background-color: antiquewhite;
+    font-family: Garamond, cursive;
+    font-weight: lighter;
+}
+
+table p{
+    font-size: 1.5em;
+    text-align: left;
+    margin-left: 10%;
+}
+table th{
+    font-size: 1.5em;
+    text-align: center;
+}
